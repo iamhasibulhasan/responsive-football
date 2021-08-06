@@ -1,0 +1,191 @@
+/* -------------------------------------
+    Google Fonts Load
+    --------------------------------- */
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+
+
+
+    /* ----------------------------------
+        Utilities Or Common
+        ------------------------------ */
+    
+    body{
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+    section{
+        margin-bottom: 100px;
+    }
+
+
+    /* ------------------------------------
+        Desktop View
+        ----------------------------------- */
+
+    /* top header section */
+    .top-header{
+        background-color: blue;
+        display: flex;
+        height: 474px;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .title-info{
+        line-height: 50px;
+    }
+    .title-info h1{
+        font-size: 64px;
+        color: white;
+    }
+    .watch-btn{
+        text-decoration: none;
+        background-color: #E02C6D;
+        padding: 10px 24px;
+        color: white;
+        font-weight: 200;
+    }
+    .watch-btn:hover{
+        background-color: #E02C6D;
+    }
+    .title-image img{
+        height: 438px;
+    }
+    .title-image img{
+        animation: move 2s linear infinite;
+    }
+    @keyframes move {
+        0% { transform: translateX(0px); }
+
+        33% { transform: translateY(15px); }
+        66% { transform: translateX(-15px); }
+
+        100% { transform: translateX(0px); }
+      }
+
+    /* Media Banner */
+    .media-banners{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
+        padding: 5px 0px;
+        margin: -30px 0px;
+        background-color: rgb(243, 240, 240);
+        padding: 10px 10px 5px 10px;
+    }
+    .banner{
+        display: flex;
+        align-items: center;
+    }
+    .media-image img{
+        border: 2px solid #222;
+        border-radius: 12px;
+        background: #444;
+        padding: 10px 12px;
+        transition: all .3s ease-out;
+        text-shadow: 0px 0px 8px rgb(0 0 0 / 30%);
+        height: 72px;
+        width: auto;
+    }
+    .media-image img:hover{
+        transform: scale(1.2);
+        transition: all 1s;
+    }
+    .media-text a{
+        text-decoration: none;
+        font-weight: 700;
+        color: black;
+        margin-left: 15px;
+    }
+    .media-text a:hover{
+        color: rgb(156, 23, 23);
+    }
+
+    /* Payers Section */
+
+    .players{
+        display: grid;
+        grid-template-columns: repeat(3, 330px);
+        justify-content: center;
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .player{
+        /* border: 1px solid black; */
+        padding: 15px;
+        border-radius:5px;
+        box-shadow: 4px 2px 13px 0px #ccc;
+        
+    }
+    .player img{
+        width: 300px;
+        height: 256px;
+    }
+    .player-info p{
+        margin-top: -10px;
+    }
+
+    /* Highlight Section */
+    .highlight{
+        display: grid;
+        grid-template-columns: 470px 567px;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .highlight-info h1{
+        line-height: 30px;
+        font-size: 38px;
+    }
+    .highlight-info p{
+        width: 400px;
+        font-size: 16px;
+        margin-bottom: 26px;
+    }
+    .highlight-img img{
+        width: 567px;
+        margin-left: 30px;
+    }
+
+    /* Videos Section */
+    .highlight-videos{
+        background-color: rgb(238, 232, 232);
+        padding-bottom: 30px;
+    }
+    .video-title{
+        padding-top: 5px;
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 30px;
+        margin-top: -50px;
+    }
+    .videos{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+
+    /* Footer Section */
+    footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    footer img{
+        width: 20%;
+    }
+    .social-icon{
+        margin: 20px 0 0 10px;
+    }
+    .social-icon .social{
+        font-size: 10px;
+        padding: 10px;
+        margin: 0 5px;
+        background-color: #d6d6d6;
+        color: rgb(117, 115, 115);
+        border-radius: 50%;
+    }
+    .social-icon .social:hover{
+        transition: .2s;
+        transform: scale(1.3);
+    }
